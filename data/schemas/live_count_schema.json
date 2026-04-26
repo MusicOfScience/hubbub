@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Live Count CSV Schema",
+  "description": "Schema for validating live_count.csv column structure",
+  "type": "object",
+  "properties": {
+    "columns": {
+      "type": "array",
+      "description": "Expected columns in the live count CSV",
+      "items": [
+        {"const": "booth_id"},
+        {"pattern": "^[a-z_]+_primary$"},
+        {"pattern": "^[a-z_]+_tcp$"},
+        {"const": "total_enrolled"},
+        {"const": "counted_flag"}
+      ]
+    }
+  },
+  "required_columns": [
+    "booth_id",
+    "total_enrolled",
+    "counted_flag"
+  ],
+  "column_types": {
+    "booth_id": "string",
+    "total_enrolled": "integer",
+    "counted_flag": "integer",
+    "informal": "integer"
+  },
+  "column_constraints": {
+    "counted_flag": {"enum": [0, 1]},
+    "total_enrolled": {"minimum": 0}
+  }
+}

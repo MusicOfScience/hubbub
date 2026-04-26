@@ -1,0 +1,23 @@
+{
+  "election_id": "banksia_2026",
+  "electorate": "Banksia",
+  "state": "Victoria",
+  "level": "federal",
+  "election_date": "2026-05-17",
+  "enrolled_voters": 35420,
+  "previous_election_date": "2022-05-21",
+  "tcp_candidates": ["chen_sarah", "morrison_james"],
+  "candidates": [
+    {"candidate_id": "chen_sarah", "name": "Sarah Chen", "party": "Australian Labor Party", "party_abbrev": "ALP", "colour": "#E53935"},
+    {"candidate_id": "morrison_james", "name": "James Morrison", "party": "Liberal Party of Australia", "party_abbrev": "LIB", "colour": "#1565C0"},
+    {"candidate_id": "walsh_emma", "name": "Emma Walsh", "party": "Australian Greens", "party_abbrev": "GRN", "colour": "#2E7D32"},
+    {"candidate_id": "bradley_tom", "name": "Tom Bradley", "party": "Independent", "party_abbrev": "IND", "colour": "#757575"}
+  ],
+  "vote_type_estimates": {
+    "ordinary_booth": 18000,
+    "pre_poll": 9000,
+    "postal": 4500,
+    "absent": 1500,
+    "provisional": 400
+  }
+}

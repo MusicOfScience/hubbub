@@ -1,0 +1,5 @@
+vote_type,estimated_total,received_count,alp_lean_pct,lib_lean_pct
+postal,4500,1200,46,54
+pre_poll,9000,3100,52,48
+absent,1500,400,51,49
+provisional,400,80,50,50

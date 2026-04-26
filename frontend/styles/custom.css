@@ -1,0 +1,113 @@
+/* Margin of Error — Custom Styles */
+
+/* Ticker/simulcast bar */
+.ticker-bar {
+    background: linear-gradient(90deg, #1565C0, #0d47a1);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ticker-label {
+    background: #E53935;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 12px;
+}
+.ticker-content {
+    color: #e3f2fd;
+}
+
+/* Large margin display */
+.margin-display {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.1;
+    margin: 12px 0;
+}
+.margin-alp { color: #E53935; }
+.margin-lib { color: #1565C0; }
+.margin-grn { color: #2E7D32; }
+
+/* Progress bar label */
+.progress-label {
+    font-size: 0.85rem;
+    color: #555;
+    text-align: right;
+}
+
+/* Status badges */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.badge-early    { background: #e3f2fd; color: #1565C0; }
+.badge-developing { background: #fff3e0; color: #E65100; }
+.badge-mature   { background: #e8f5e9; color: #2E7D32; }
+.badge-near-final { background: #fce4ec; color: #C62828; }
+
+/* Recount risk */
+.risk-high     { color: #E53935; font-weight: bold; }
+.risk-moderate { color: #E65100; font-weight: bold; }
+.risk-low      { color: #2E7D32; font-weight: bold; }
+
+/* Card containers */
+.card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #1565C0;
+    padding-bottom: 4px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .card {
+        background: #1e1e1e;
+        border-color: #333;
+        color: #eee;
+    }
+    .card-title { color: #90caf9; border-color: #1565C0; }
+    .ticker-bar { background: linear-gradient(90deg, #0d47a1, #1a237e); }
+    .badge-early { background: #1a237e; color: #90caf9; }
+    .badge-near-final { background: #4a0a0a; color: #ef9a9a; }
+}
+
+/* Streamlit overrides */
+div[data-testid="stMetricValue"] {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+div[data-testid="stMetricLabel"] {
+    font-size: 0.85rem !important;
+    color: #555 !important;
+}
+
+/* Party colour chips */
+.party-chip {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
